@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introdu datele minimarketului:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etNume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nume Minimarket" />
+
+        <CheckBox
+            android:id="@+id/cbDeschis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Este deschis acum?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mărime:"
+            android:layout_marginTop="8dp"/>
+        <RadioGroup
+            android:id="@+id/rgMarime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mic"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rbMare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mare" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categorie:"
+            android:layout_marginTop="8dp"/>
+        <Spinner
+            android:id="@+id/spinnerCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating:"
+            android:layout_marginTop="8dp"/>
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <Switch
+            android:id="@+id/switchLivrare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are serviciu de livrare?"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSalveaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvează și trimite" />
+
+    </LinearLayout>
+</ScrollView>

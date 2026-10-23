@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Formular AI Design"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNumeAI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#E0E0E0"
+            android:hint=" Nume Minimarket"
+            android:paddingStart="12dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbDeschisAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Deschis în acest moment"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Selectați mărimea:"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/rgMarimeAI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMicAI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Mic" />
+
+            <RadioButton
+                android:id="@+id/rbMareAI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Mare" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Categorie produs:"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategorieAI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#E0E0E0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Acordați un rating:"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBarAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:theme="@style/Widget.AppCompat.RatingBar" />
+
+        <Switch
+            android:id="@+id/switchLivrareAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Disponibil pentru livrare  "
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSalveazaAI"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Finalizare"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

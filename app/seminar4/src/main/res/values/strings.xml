@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Seminar4</string>
+    <string-array name="metodaplata">
+        <item>Card Bancar</item>
+        <item>Cash</item>
+    </string-array>
+</resources>
