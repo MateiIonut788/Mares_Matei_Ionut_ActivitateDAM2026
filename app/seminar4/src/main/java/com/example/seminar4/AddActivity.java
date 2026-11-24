@@ -32,6 +32,29 @@ public class AddActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categorii);
         spinnerCategorie.setAdapter(adapter);
 
+        Minimarket minimarketEdit = getIntent().getParcelableExtra("EDIT_MINIMARKET");
+        if (minimarketEdit != null) {
+            etNume.setText(minimarketEdit.getNume());
+            cbDeschis.setChecked(minimarketEdit.isEsteDeschis());
+            ratingBar.setRating(minimarketEdit.getRating());
+            switchLivrare.setChecked(minimarketEdit.isAreLivrare());
+
+            int pozitieCategorie = adapter.getPosition(minimarketEdit.getCategorie());
+            if (pozitieCategorie >= 0) {
+                spinnerCategorie.setSelection(pozitieCategorie);
+            }
+
+            for (int i = 0; i < rgMarime.getChildCount(); i++) {
+                if (rgMarime.getChildAt(i) instanceof RadioButton) {
+                    RadioButton rb = (RadioButton) rgMarime.getChildAt(i);
+                    if (rb.getText().toString().equals(minimarketEdit.getMarime())) {
+                        rb.setChecked(true);
+                        break;
+                    }
+                }
+            }
+        }
+
         btnSalveaza.setOnClickListener(v -> {
             String nume = etNume.getText().toString();
             boolean esteDeschis = cbDeschis.isChecked();
@@ -49,7 +72,7 @@ public class AddActivity extends AppCompatActivity {
             Intent intent = new Intent();
             intent.putExtra("OBIECT_MINIMARKET", minimarket);
             setResult(RESULT_OK, intent);
-            finish(); // Închide formularul
+            finish();
         });
     }
 }

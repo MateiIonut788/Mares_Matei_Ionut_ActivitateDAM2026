@@ -11,21 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Adaugă (Design Standard)" />
+        android:text="Adauga (Design Standard)" />
 
     <Button
         android:id="@+id/btnAdaugaMagazinAI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Adaugă (Design AI)" />
+        android:text="Adauga (Design AI)" />
 
-    <TextView
-        android:id="@+id/tvRezultat"
+    <Button
+        android:id="@+id/btnGalerie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:textSize="18sp"
-        android:text="Aici vor apărea datele obiectului creat."
-        android:gravity="center"/>
+        android:layout_marginTop="16dp"
+        android:text="Galerie Produse" />
+
+    <ListView
+        android:id="@+id/lvMinimarkete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>

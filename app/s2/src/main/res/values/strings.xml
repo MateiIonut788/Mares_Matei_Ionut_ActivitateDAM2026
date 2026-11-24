@@ -2,4 +2,6 @@
     <string name="app_name">S2</string>
     <string name="button">Button</string>
     <string name="inapoi">"Back"</string>
+    <string name="apasa">Apasa</string>
+    <string name="exemplu_ion">Exemplu: Ion</string>
 </resources>

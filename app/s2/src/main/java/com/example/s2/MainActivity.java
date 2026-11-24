@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +26,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-
+public void culegeDate(View view){
+    EditText et=findViewById(R.id.nume_et);
+    CheckBox cb=findViewById(R.id.esteZi_CB);
+    String nume=et.getText().toString();
+    Boolean esteZi=cb.isChecked();
+}
 
 
 //    @Override

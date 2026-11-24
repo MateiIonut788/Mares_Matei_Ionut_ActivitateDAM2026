@@ -25,3 +25,5 @@ dependencyResolutionManagement {
 rootProject.name = "Mares_Matei_ActivitateDAM2026"
 include(":app")
 include(":app:s2")
+include(":app:s4")
+include(":app:seminar4")
